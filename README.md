@@ -1,1 +1,1 @@
-# myQAexamples
+# SQL requests
