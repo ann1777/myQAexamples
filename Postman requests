@@ -1,0 +1,13 @@
+POST {{link_trello}}boards?key={{key}}&token={{token}}&name=OpenProject - Creating board #1 with using two snippints: status code and notification about successful or not post request
+POST {{link_trello}}lists?key={{key}}&token={{token}}&name=List of tasks&idBoard={{BoardID}} - Creating a List on the Board
+POST {{link_trello}}labels?key={{key}}&token={{token}}&name=LabelID&color=blue&idBoard={{BoardID}} - Creating a Label on the Board
+POST {{link_trello}}cards?key={{key}}&token={{token}}&name=testCard&desc=Card description&due=2020.12.12&idList={{ListID}} - Creatimng a new Card
+PUT {{link_trello}}boards/{{BoardID}}?key={{key}}&token={{token}}&name=ProjectRun - Rename the Board
+PUT {{link_trello}}cards/{{CardID}}?key={{key}}&token={{token}}&color=red&dueComplete=1&cover=sky&brightness=dark&size=full - Update card color
+PUT {{link_trello}}lists/{{ListID}}?key={{key}}&token={{token}}&name=MyTasks - Rename the List on the Board
+PUT {{link_trello}}lists/{{ListID}}/BoardID?key={{key}}&token={{token}}&value={{BoardID}} - Move List to Board
+GET {{link_trello}}boards/{{BoardID}}?key={{key}}&token={{token}} - Get information from the Board
+GET {{link_trello}}lists/{{ListID}}?key={{key}}&token={{token}} - Get information from the List
+GET {{link_trello}}cards/{{CardID}}?key={{key}}&token={{token}} - Get a Card
+DELETE {{link_trello}}labels/{{LabelID}}?key={{key}}&token={{token}} - Delete the Label from the Board
+DELETE {{link_trello}}boards/{{BoardID}}?key={{key}}&token={{token}} - Delete the Board
